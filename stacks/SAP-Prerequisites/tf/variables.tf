@@ -16,28 +16,40 @@
 
 variable "project_id" {
   description = "The ID of the project in which the resources will be deployed."
+  default = "actum-digital-sap-demo"
 }
 
 variable "zone" {
   description = "The zone to to deploy resources"
+  default = "europe-west1-b"
+}
+
+variable "network" {
+  description = "The network to to deploy resources"
+  default = "europe-west1-b"
 }
 
 variable "subnetwork" {
   description = "The name or self_link of the subnetwork where the isntance will be deployed. The subnetwork must exist in the same region this instance will be created in."
+  default = "asd-subnetwork"
 }
 
 variable "subnetwork_project" {
   description = "The name or self_link of the subnetwork project where the isntance will be deployed. The subnetwork must exist in the same region this instance will be created in."
+  default = "actum-digital-sap-demo"
 }
 
 variable "network_tags" {
   description = "List of network tags to attach to the firewall rule."
+  default = "sap-allow-all"
 }
 
 variable "sap_service_account_email" {
   description = "SAP service account email."
+  default = "sap-common-sa"
 }
 
 variable "nat_create" {
   description = "Create NAT instance (true/false)"
+  default = true
 }
