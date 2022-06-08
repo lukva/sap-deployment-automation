@@ -26,7 +26,7 @@ variable "zone" {
 
 variable "network" {
   description = "The network to to deploy resources"
-  default = "europe-west1-b"
+  default = "asd-network"
 }
 
 variable "subnetwork" {
@@ -41,7 +41,7 @@ variable "subnetwork_project" {
 
 variable "network_tags" {
   description = "List of network tags to attach to the firewall rule."
-  default = "sap-allow-all"
+  default = ["sap-allow-all"]
 }
 
 variable "sap_service_account_email" {

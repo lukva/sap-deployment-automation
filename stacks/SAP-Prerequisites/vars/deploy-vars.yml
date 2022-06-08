@@ -16,6 +16,8 @@ sap_project_id: albatross-duncanl-sandbox-2
 sap_zone: us-central1-a
 sap_subnetwork_project_id: '{{ sap_project_id }}'
 sap_subnetwork: app2
-sap_network_tag: "sap-allow-all"
+sap_network: asd-network
+sap_network_tag: ["sap-allow-all"]
 sap_service_account_name: sap-common-sa
 sap_nat_create: false
+

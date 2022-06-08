@@ -22,6 +22,10 @@ variable "zone" {
   description = "The zone to to deploy resources"
 }
 
+variable "network" {
+  description = "The network to to deploy resources"
+}
+
 variable "subnetwork" {
   description = "The name or self_link of the subnetwork where the isntance will be deployed. The subnetwork must exist in the same region this instance will be created in."
 }

@@ -20,6 +20,7 @@ module "sap_sa" {
   source                   = "../../../terraform/modules/sap-pre-reqs"
   project_id               = var.project_id
   zone                     = var.zone
+  network                  = var.network
   subnetwork               = var.subnetwork
   subnetwork_project       = var.subnetwork_project
   network_tags             = var.network_tags
